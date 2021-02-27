@@ -11,6 +11,7 @@ public class Main {
         System.setProperty("webdriver.chrome.driver", CHROME_DRIVER_PATH);
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.cesar.school");
+        driver.manage().window().maximize();
         driver.quit();
     }
 }
